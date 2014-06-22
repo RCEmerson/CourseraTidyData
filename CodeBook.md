@@ -15,14 +15,15 @@ seperated into a training and test data set.
 
 The dataset includes the following files:
 
--'README.txt'
--'features_info.txt'
--'features.txt': List of all features.
--'activity_labels.txt': Links the class labels with their activity name.
--'train/X_train.txt': Training set.
--'train/y_train.txt': Training labels.
--'test/X_test.txt': Test set.
--'test/y_test.txt': Test labels.
+-'activity_labels.txt'  
+-'features.txt'   
+-'subject_test.txt'  
+-'subject_train.txt'  
+-'test/x_test.txt'  
+-'test/y_test.txt'    
+-'train/x_train.txt'    
+-'train/y_train.txt'    
+
 
 ## Data Transformation
 
@@ -34,8 +35,8 @@ The dataset includes the following files:
 
 The run_analysis.R script does this by:
 
-Require reshape2 package
-Load the test and training data, and the features and activity labels  
-Merge these into one dataset and label appropriately  
-Extract the collums that measure mean and standard deviation
-Create another dataset that contains the average of each variable for each activity and each subject
+- Require reshape2 package  
+- Load the test and training data, and the features and activity labels    
+- Merge these into one dataset and label appropriately    
+- Extract the collums that measure mean and standard deviation  
+- Create another dataset that contains the average of each variable for each activity and each subject  
